@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Realm | Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: #1a1a2e url('https://img.freepik.com/free-photo/mythical-dragon-beast-anime-style_23-2151112835.jpg?semt=ais_hybrid&w=740&q=80') no-repeat center center fixed;
+            background-size: cover;
+            color: #e0e0e0;
+        }
+        header {
+            background: #111126; /* solid color */
+            color: #fff;
+            padding: 20px 10px;
+            text-align: center;
+            border-bottom: 2px solid #00ffff;
+        }
+        header h1 {
+            color: #ff00ff;
+            font-weight: 700;
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #1a1a2e; /* solid color */
+            border-bottom: 2px solid #00ffff;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: #00ffff;
+            text-transform: uppercase;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: 700;
+            font-size: 1.15rem;
+            padding: 14px 8px;
+        }
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+            gap: 24px;
+            width: 88%;
+            margin: 40px auto;
+        }
+        .card {
+            background: #22223a; /* solid color */
+            border: 2px solid #ff00ff;
+            border-radius: 12px;
+            max-width: 260px;
+            width: 100%;
+            min-height: 320px;
+            text-align: center;
+            margin: 0 auto;
+            padding: 1.2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card img {
+            width: 180px;
+            height: 140px;
+            object-fit: cover;
+            margin-bottom: 18px;
+            border-radius: 7px;
+        }
+        .card h2 {
+            font-size: 1.15rem;
+            color: #00ffff;
+            margin-bottom: 0.6rem;
+            font-weight: 700;
+        }
+        .card a {
+            color: #1a1a2e;
+            font-weight: 700;
+            background: #00ffff;
+            border-radius: 4px;
+            padding: 10px 16px;
+            margin-top: auto;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1rem;
+            display: block;
+        }
+        @media (max-width: 900px) {
+            .cards-container {
+                grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            }
+            .card img {
+                width: 120px;
+                height: 90px;
+            }
+            .card { min-height: 220px; max-width: 170px; }
+        }
+        @media (max-width: 600px) {
+            nav a { margin: 0 5px; font-size: 0.98rem; }
+            .cards-container { gap: 10px; width: 97%; }
+            .card img { width: 85px; height: 60px;}
+            .card { min-height: 120px; max-width: 105px; padding: 0.5rem 0.1rem;}
+            .card a { font-size: 0.82rem; padding: 7px 3px;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Anime Realm</h1>
+        <p>Your Portal to the Anime Universe</p>
+    </header>
+    <nav>
+        <a href="Anime assignment.html">Anime</a>
+        <a href="categories.html">Categories</a>
+        <a href="fanart.html">Fanart</a>
+        <a href="anime merch.html">Anime Merch</a>
+        <a href="news.html">Anime News</a>
+    </nav>
+    <div class="cards-container">
+        <div class="card">
+            <img src="https://play-lh.googleusercontent.com/3Y1eygZDcaqRwTV51-rdvaJklgH2Whv2h9-Aza2lPyMy2ct5kAi7sNvJlQUwcTDtXV0=w526-h296-rw" alt="Anime">
+            <h2>Anime</h2>
+            <a href="anime.html">Explore Anime</a>
+        </div>
+        <div class="card">
+            <img src="https://store-images.s-microsoft.com/image/apps.2600.14487600252661962.0f753b53-06c6-4514-8a0b-67ab3886760b.9cc94956-e2d1-491c-835b-096370767c74" alt="Categories">
+            <h2>Categories</h2>
+            <a href="categories.html">Browse Categories</a>
+        </div>
+        <div class="card">
+            <img src="https://wallpapers.com/images/featured/anime-collage-yv844c9tz9diiip2.jpg" alt="Fanart">
+            <h2>Fanart</h2>
+            <a href="fanart.html">See Fanart</a>
+        </div>
+        <div class="card">
+            <img src="https://i5.walmartimages.com/seo/Anime-Poster-One-Piece-Luffy-Room-Decor-Wall-Art-One-Piece-Luffy-Merch_91017735-81d1-4ebd-952f-88627bb0e3c8.dd7be24f99802e6a2471801a8d5ea157.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="Anime Merch">
+            <h2>Anime Merch</h2>
+            <a href="merch.html">Shop Merch</a>
+        </div>
+        <div class="card">
+            <img src="https://www.lemon8-app.com/seo/image?item_id=7489938205366796846&index=0&sign=aeae1408249b4df5e7bc91169b1a55d3" alt="Anime News">
+            <h2>Anime News</h2>
+            <a href="news.html">Read News</a>
+        </div>
+    </div>
+</body>
+</html>
