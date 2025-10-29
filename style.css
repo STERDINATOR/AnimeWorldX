@@ -1,110 +1,132 @@
 
 body {
-  background-color: #ffe6f2;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-family: Arial, sans-serif;
-  text-align: center;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
-  padding: 0;
-  color: #222;
+  background: linear-gradient(135deg, #ffe6f0, #f5f7ff);
+  color: #444;
 }
 
-h1 {
-  background-color: black;
+header {
+  background: linear-gradient(90deg, #ff4d6d, #ff80ab);
   color: white;
-  padding: 15px;
-  margin: 0;
+  text-align: center;
+  padding: 30px 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 10px 0;
+  font-size: 2.5em;
   letter-spacing: 2px;
-  text-shadow: 0 0 10px #ff3366;
-}
-h1 span {
-  color: #ff3366;
 }
 
-ul {
-  list-style-type: none;
-  padding: 10px;
-  background-color: #ff3366;
-  margin: 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+nav {
+  margin-top: 10px;
 }
-li {
-  display: inline;
-  margin: 10px;
-}
-a {
+
+nav a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
-  padding: 6px 12px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-a:hover {
-  background-color: black;
-  color: #ff3366;
+  margin: 0 15px;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
-.tagline {
-  font-size: 18px;
-  color: #ff3366;
-  font-weight: bold;
-  text-shadow: 0 0 8px #ffcce0;
-  margin-top: -10px;
-  margin-bottom: 25px;
+
+main {
+  padding: 70px 10%;
 }
 
-div {
-  display: inline-block;
-  margin: 15px;
+.section-title {
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 2px solid #ff3366;
-  border-radius: 10px;
-  padding: 10px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-div:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px #ff3366;
-}
-img {
-  border: 2px solid #ff3366;
-  border-radius: 10px;
-  width: 250px;
-  height: 200px;
-}
-b {
-  display: block;
-  margin-top: 5px;
-  color: #ff3366;
+  font-size: 2em;
+  color: #ff4d6d;
+  margin-bottom: 40px;
 }
 
-.more-fanart {
-  background-color: rgba(255, 51, 102, 0.1);
-  border: 1px solid #ff3366;
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.news-card1 {
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.news-card2 {
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.news-card3 {
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.news-card4 {
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card1 a {
   display: inline-block;
-  padding: 10px 20px;
-  border-radius: 10px;
-  margin-top: 25px;
-  font-style: italic;
-  color: #333;
-}
-.more-fanart a {
-  color: #ff3366;
+  margin: 15px 0 20px;
+  background-color: #f04006;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
   text-decoration: none;
-  font-weight: bold;
+  transition: background 0.3s;
 }
-.more-fanart a:hover {
-  text-decoration: underline;
+.news-card2 a {
+  display: inline-block;
+  margin: 15px 0 20px;
+  background-color: #f04006;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.news-card3 a {
+  display: inline-block;
+  margin: 15px 0 20px;
+  background-color: #f04006;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.news-card4 a {
+  display: inline-block;
+  margin: 15px 0 20px;
+  background-color: #f04006;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s;
 }
 
-footer {
-  background-color: #ffe6f2;
-  color:rgb(9, 9, 9);
-  padding: 10px;
-  font-size: 14px;
-  letter-spacing: 1px;
+.news-card1 a:hover {
+  background-color: #ff3366;
 }
+
+
+
